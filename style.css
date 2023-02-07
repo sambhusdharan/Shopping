@@ -49,6 +49,10 @@ body{
     padding: 20px 80px;
     background: #E3E6F3;
     box-shadow: 0 5px 15px rgba(0,0,0,0.06);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left:0;
 }
 #navbar{
     display: flex;
@@ -80,4 +84,46 @@ body{
 	position: absolute;
     bottom: -4px;
     left:20px;
+}
+#hero{
+	background-image: url("img/hero4.png"); 
+	height: 90vh;
+	width: 100%;
+	background-size: cover;
+	background-position: top 25% right 0;
+	padding: 0px 80px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+    justify-content: center;
+
+    }
+#hero h4{
+	padding-bottom: 15px;
+	color: rgba(0,0,255,0.4)
+
+}    
+#hero h1{
+	padding-bottom: 15px;
+	color: rgba(0,0,255,0.4)
+}
+
+#hero p{
+	font-weight: 600
+}
+
+#hero button{
+	background-image: url(img/button.png);
+	border: none;
+	padding:14px 80px 14px 64px;
+	background-color: transparent;
+	color:rgba(0,0,255,0.4) ;
+	font-weight: 600;
+	background-repeat: no-repeat;
+	cursor: pointer;
+	font-size: 15px;
+	
+}
+#hero button a{
+    text-decoration: none;
 }
